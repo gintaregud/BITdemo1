@@ -21,9 +21,9 @@
 
     function readFolderFiles($dir)
     {
-        $file = scandir('./');
+        $files = scandir('./');
         print('<ul>');
-        foreach ($file as $file) {
+        foreach ($files as $file) {
             if (substr($file, 0, 1) != '.') {
                 print('<li>');
                 if (is_dir($dir . '/' . $file)) {
