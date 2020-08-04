@@ -38,6 +38,7 @@
         print('</ul>');
     }
     readFolderFiles('data');
+    echo '<button onclick="window.history.back()">Back</button>';
 
 
     ?>
